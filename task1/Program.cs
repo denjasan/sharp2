@@ -30,7 +30,7 @@ internal class ClassRoom
 
 public class Pupil
 {
-    public virtual void Print()
+    public void Print()
     {
         Study();
         Read();
@@ -61,13 +61,6 @@ public class Pupil
 
 public class ExcelentPupil : Pupil
 {
-    public override void Print()
-    {
-        Study();
-        Read();
-        Write();
-        Relax();
-    }
     public override void Study()
     {
         Console.WriteLine("Отлично учится");
@@ -91,13 +84,6 @@ public class ExcelentPupil : Pupil
 
 public class GoodPupil : Pupil
 {
-    public override void Print()
-    {
-        Study();
-        Read();
-        Write();
-        Relax();
-    }
     public override void Study()
     {
         Console.WriteLine("Нормально учится");
@@ -121,13 +107,6 @@ public class GoodPupil : Pupil
 
 public class BadPupil : Pupil
 {
-    public override void Print()
-    {
-        Study();
-        Read();
-        Write();
-        Relax();
-    }
     public override void Study()
     {
         Console.WriteLine("Плохо учится");
